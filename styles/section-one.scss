@@ -1,0 +1,30 @@
+%setStyleFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.section-one {
+    padding: 20px 0;
+    .section-one__container {
+        // margin: 0 auto;
+        width: 100%;
+        @extend %setStyleFlex;
+        .section-one__container-item {
+            width: 25%;
+            border: 1px solid #000;
+            margin: 0 20px;
+            padding: 20px 15px;
+            text-align: center;
+            .paragraph {
+                display: none;
+            }
+        }
+        .section-one__container-button {
+            // border: 1px solid #000;
+            border-radius: 25px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
