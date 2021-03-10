@@ -1,0 +1,61 @@
+$largeText: uppercase;
+%setStyleFlex {
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.header-website {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/photoes/krajobraz1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    @extend %setStyleFlex;
+    align-items: center;
+    .header-website__container {
+        text-align: center;
+        .header-website__title {
+            text-transform: $largeText;
+        }
+        .header-website__button {
+            border-radius: 50px;
+            text-transform: $largeText;
+        }
+    }
+}
+
+
+
+
+
+// .article__two {
+//     display: grid;
+//     border: $borderStyle;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     grid-template:
+//     "place1 place2 place3"
+//     "place4 place5 place6";
+//     div {
+//         height: 30vh;
+//         border: 20px solid #000;
+//         background-size: cover;
+//         background-position: center;
+//         @for $i from 1 through 6 {
+//             &:nth-child(#{$i}) {
+//                 background-image: url(photoes/d#{$i}.jpg);
+//                 border-color: lighten(#000, 15% * $i);
+//                 grid-area: place#{$i};
+//             }
+//         }
+//     }
+// }
