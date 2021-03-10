@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header-website {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,5 +42,48 @@ a {
 .header-website .header-website__container .header-website__button {
   border-radius: 50px;
   text-transform: uppercase;
+}
+
+.arrow-up {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 15px;
+  background: #FFF;
+  text-align: center;
+}
+
+.arrow-up .arrow-up img {
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid green;
+}
+
+.arrow-up {
+  display: none;
+  /* standardowo przycisk jest ukryty */
+  position: fixed;
+  /* przycisk jako „przyklejony” do strony */
+  bottom: 20px;
+  /* umiejscawiamy przycisk na dole strony */
+  right: 30px;
+  /* umiejscawiamy przycisk po prawej stronie */
+  z-index: 99;
+  /* upewniamy się że przycisk jest na wierzchu */
+  border: none;
+  /* usuwamy ramki */
+  outline: none;
+  /* usuwamy obrys */
+  background-color: red;
+  /* ustawiamy kolor tła */
+  color: white;
+  /* kolor tekstu */
+  cursor: pointer;
+  /* dodanie „łapki” po najechaniu myszką */
+  padding: 15px;
+  /* trochę odstępu wewnątrz */
+  border-radius: 10px;
+  /* zaokrąglone rogi */
 }
 /*# sourceMappingURL=style.css.map */
