@@ -1,0 +1,49 @@
+$maxWidth: 100%;
+$largeText: uppercase;
+%setStyleFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: $maxWidth;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    .menu__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px;
+        @extend %setStyleFlex;
+        .menu__list-item {
+            padding: 15px 20px;
+            margin-left: 20px;
+            text-transform: $largeText;
+            font-weight: bold;
+        }
+    }
+    .menu__button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .menu {
+        margin-top: -100px;
+        padding: 0;
+        .menu__list {
+            // width: $maxWidth;
+            .menu__list-item {
+                width: $maxWidth;
+                display: block;
+                padding: 15px 0;
+            }
+        }
+        .menu__button {
+            width: $maxWidth;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
