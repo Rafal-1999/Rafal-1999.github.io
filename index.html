@@ -60,6 +60,23 @@
         <button class="container-icon__arrow-up" onclick="scrollFunctionUp()">
             <i class="icon-up"></i>
         </button>
+        <script>
+            let scrolling = document.getElementsByClassName(".container-icon");
+            function scrollFunction() {
+                if(document.body.scroll > 20 + "px") {
+                    console.log(scrolling);
+                    // document.getElementsByClassName(".container-icon__arrow-up").style.display = "block";
+                    scrolling.style.display = "block";
+                } else {
+                    // document.getElementsByClassName(".container-icon__arrow-up").style.display = "none";
+                    scrolling.style.display = "none";
+                }
+            }
+            function scrollFunctionUp() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptates tempore repellat ad, in aspernatur
         doloribus sed porro quisquam facilis, molestias sequi et itaque unde animi. Inventore magnam deleniti unde!

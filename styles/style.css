@@ -52,7 +52,7 @@ a {
 .container-icon .container-icon__arrow-up {
   width: 50px;
   height: 50px;
-  display: block;
+  display: none;
   /* standardowo przycisk jest ukryty */
   position: fixed;
   /* przycisk jako „przyklejony” do strony */
