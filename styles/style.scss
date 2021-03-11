@@ -59,12 +59,15 @@ a {
     background-color: red; /* ustawiamy kolor tła */
     color: white; /* kolor tekstu */
     cursor: pointer; /* dodanie „łapki” po najechaniu myszką */
-    // padding: 15px; /* trochę odstępu wewnątrz */
+    padding: 15px; /* trochę odstępu wewnątrz */
     border-radius: 10px; /* zaokrąglone rogi */  
     .arrow-up a {
         width: 100%;
         height: 100%;
-        margin: 15px;
+        .icon-up {
+            font-size: 20px;
+            color: #FFF;
+        }
     } 
 }
 
