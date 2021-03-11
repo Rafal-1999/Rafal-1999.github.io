@@ -32,33 +32,40 @@ a {
         }
     }
 }
+// .arrow-up {
+//     width: 100%;
+//     height: 50px;
+//     position: fixed;
+//     bottom: 15px;
+//     background: #FFF;
+//     text-align: center;
+//     .arrow-up img {
+//         background-size: 50px 50px;
+//         width: 50px;
+//         height: 50px;
+//         border: 2px solid green;
+//     }
+// }
 .arrow-up {
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    bottom: 15px;
-    background: #FFF;
-    text-align: center;
-    .arrow-up img {
-        background-size: 50px 50px;
-        width: 50px;
-        height: 50px;
-        border: 2px solid green;
-    }
-}
-.arrow-up {
-    display: none; /* standardowo przycisk jest ukryty */
+    // width: 50px;
+    background-image: url(/photoes/dog.jpg);
+    display: block; /* standardowo przycisk jest ukryty */
     position: fixed; /* przycisk jako „przyklejony” do strony */
     bottom: 20px; /* umiejscawiamy przycisk na dole strony */
     right: 30px; /* umiejscawiamy przycisk po prawej stronie */
     z-index: 99; /* upewniamy się że przycisk jest na wierzchu */
-    border: none; /* usuwamy ramki */
+    border: 2px solid black; /* usuwamy ramki */
     outline: none; /* usuwamy obrys */
     background-color: red; /* ustawiamy kolor tła */
     color: white; /* kolor tekstu */
     cursor: pointer; /* dodanie „łapki” po najechaniu myszką */
-    padding: 15px; /* trochę odstępu wewnątrz */
-    border-radius: 10px; /* zaokrąglone rogi */
+    // padding: 15px; /* trochę odstępu wewnątrz */
+    border-radius: 10px; /* zaokrąglone rogi */  
+    .arrow-up a {
+        width: 100%;
+        height: 100%;
+        margin: 15px;
+    } 
 }
 
 
