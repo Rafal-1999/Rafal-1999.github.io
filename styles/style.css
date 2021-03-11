@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.header-website {
+.header-website, .container-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,41 +44,34 @@ a {
   text-transform: uppercase;
 }
 
-.arrow-up {
-  background-image: url(/photoes/dog.jpg);
+.container-icon {
+  width: 100%;
+  background: green;
+}
+
+.container-icon .container-icon__arrow-up {
+  width: 50px;
+  height: 50px;
   display: block;
   /* standardowo przycisk jest ukryty */
   position: fixed;
   /* przycisk jako „przyklejony” do strony */
-  bottom: 20px;
+  bottom: 25px;
   /* umiejscawiamy przycisk na dole strony */
-  right: 30px;
-  /* umiejscawiamy przycisk po prawej stronie */
-  z-index: 99;
-  /* upewniamy się że przycisk jest na wierzchu */
-  border: 2px solid black;
-  /* usuwamy ramki */
+  border: none;
   outline: none;
-  /* usuwamy obrys */
-  background-color: red;
-  /* ustawiamy kolor tła */
+  background: red;
   color: white;
-  /* kolor tekstu */
   cursor: pointer;
-  /* dodanie „łapki” po najechaniu myszką */
-  padding: 15px;
-  /* trochę odstępu wewnątrz */
-  border-radius: 10px;
+  border-radius: 50px;
   /* zaokrąglone rogi */
 }
 
-.arrow-up .arrow-up a {
-  width: 100%;
-  height: 100%;
+.container-icon .container-icon__arrow-up .icon-up {
+  font-size: 2em;
 }
 
-.arrow-up .arrow-up a .icon-up {
-  font-size: 20px;
-  color: #FFF;
+.container-icon .container-icon__arrow-up .icon-up::before {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

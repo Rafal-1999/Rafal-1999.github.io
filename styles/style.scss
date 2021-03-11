@@ -1,3 +1,4 @@
+$maxWidth: 100%;
 $largeText: uppercase;
 %setStyleFlex {
     display: flex;
@@ -12,7 +13,7 @@ a {
     text-decoration: none;
 }
 .header-website {
-    width: 100%;
+    width: $maxWidth;
     height: 100vh;
     background-image: url(/photoes/krajobraz1.jpg);
     background-repeat: no-repeat;
@@ -46,29 +47,30 @@ a {
 //         border: 2px solid green;
 //     }
 // }
-.arrow-up {
-    // width: 50px;
-    background-image: url(/photoes/dog.jpg);
-    display: block; /* standardowo przycisk jest ukryty */
-    position: fixed; /* przycisk jako „przyklejony” do strony */
-    bottom: 20px; /* umiejscawiamy przycisk na dole strony */
-    right: 30px; /* umiejscawiamy przycisk po prawej stronie */
-    z-index: 99; /* upewniamy się że przycisk jest na wierzchu */
-    border: 2px solid black; /* usuwamy ramki */
-    outline: none; /* usuwamy obrys */
-    background-color: red; /* ustawiamy kolor tła */
-    color: white; /* kolor tekstu */
-    cursor: pointer; /* dodanie „łapki” po najechaniu myszką */
-    padding: 15px; /* trochę odstępu wewnątrz */
-    border-radius: 10px; /* zaokrąglone rogi */  
-    .arrow-up a {
-        width: 100%;
-        height: 100%;
+.container-icon {
+    width: $maxWidth;
+    @extend %setStyleFlex;
+    background: green;
+    .container-icon__arrow-up {
+        width: 50px;
+        height: 50px;
+        display: block; /* standardowo przycisk jest ukryty */
+        position: fixed; /* przycisk jako „przyklejony” do strony */
+        bottom: 25px; /* umiejscawiamy przycisk na dole strony */
+        border: none;
+        outline: none;
+        background: red;
+        color: white;
+        cursor: pointer;
+        // padding: 15px; /* trochę odstępu wewnątrz */
+        border-radius: 50px; /* zaokrąglone rogi */  
         .icon-up {
-            font-size: 20px;
-            color: #FFF;
+            font-size: 2em;
+            &::before {
+                margin: 0;
+            }
         }
-    } 
+    }
 }
 
 
