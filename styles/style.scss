@@ -8,6 +8,9 @@ $largeText: uppercase;
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 a {
     color: black;
     text-decoration: none;
@@ -54,7 +57,7 @@ a {
     .container-icon__arrow-up {
         width: 50px;
         height: 50px;
-        display: none; /* standardowo przycisk jest ukryty */
+        display: block; /* standardowo przycisk jest ukryty */
         position: fixed; /* przycisk jako „przyklejony” do strony */
         bottom: 25px; /* umiejscawiamy przycisk na dole strony */
         border: none;

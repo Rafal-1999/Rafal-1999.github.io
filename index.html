@@ -61,12 +61,13 @@
             <i class="icon-up"></i>
         </button>
         <script>
-            let scrolling = document.getElementsByClassName(".container-icon");
+            let scrolling = document.getElementsByClassName("container-icon__arrow-up");
             function scrollFunction() {
-                if(document.body.scroll > 20 + "px") {
-                    console.log(scrolling);
+                if (window.scrollY > 20) {
+                    console.log(scrollY);
                     // document.getElementsByClassName(".container-icon__arrow-up").style.display = "block";
                     scrolling.style.display = "block";
+                    console.log("Pokaż go");
                 } else {
                     // document.getElementsByClassName(".container-icon__arrow-up").style.display = "none";
                     scrolling.style.display = "none";
@@ -75,6 +76,10 @@
             function scrollFunctionUp() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
+            }
+
+            window.onscroll = () => {
+                scrollFunction();
             }
         </script>
     </div>
@@ -86,6 +91,29 @@
         Sapiente aliquid id eligendi, est dolor officiis labore hic illo dolore adipisci! Necessitatibus eveniet
         veritatis quae animi sint, debitis laborum autem vel doloribus in dolorum a eos, odit tenetur? Totam.
     </p>
+
+
+
+    <!-- Do sekcji section-one -->
+    <!-- <style>
+        .pokaz{
+            display:none;
+        }
+    </style> -->
+    <!-- <script>
+        let button = document.querySelector("button");
+        let pokaz = document.querySelector(".pokaz");
+        let pokazane = document.querySelector(".pokazane");
+        button.onclick = () => {
+            if (pokaz.style.display == "block") {
+                pokaz.style.display = "none";
+                pokazane.style.display = "block";
+            } else {
+                pokaz.style.display = "block";
+                pokazane.style.display = "none";
+            }
+        }
+    </script> -->
 </body>
 
 </html>
