@@ -5,10 +5,11 @@ $largeText: uppercase;
     justify-content: center;
 }
 
-* {
-    box-sizing: border-box;
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 html {
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 a {
