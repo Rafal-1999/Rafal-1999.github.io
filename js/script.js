@@ -3,12 +3,12 @@ let scrolling = document.getElementsByClassName("container-icon__arrow-up");
 function scrollFunction() {
     if (window.scrollY > 20) {
         console.log(scrollY);
-        // document.getElementsByClassName(".container-icon__arrow-up").style.display = "block";
-        scrolling.style.display = "block";
+        document.getElementsByClassName(".container-icon__arrow-up").style.display = "block";
+        // scrolling.style.display = "block";
         console.log("Pokaż go");
     } else {
-        // document.getElementsByClassName(".container-icon__arrow-up").style.display = "none";
-        scrolling.style.display = "none";
+        document.getElementsByClassName(".container-icon__arrow-up").style.display = "none";
+        // scrolling.style.display = "none";
     }
 }
 function scrollFunctionUp() {
