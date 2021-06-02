@@ -8,17 +8,17 @@
     .section-one__container {
         width: 100%;
         @extend %setStyleFlex;
-        .section-one__container-item {
+        .section-one__item {
             width: 25%;
             border: 1px solid #000;
             margin: 0 20px;
             padding: 20px 15px;
             text-align: center;
-            .paragraph {
+            .section-one__text {
                 display: none;
             }
         }
-        .section-one__container-button {
+        .section-one__button {
             // border: 1px solid #000;
             border-radius: 25px;
             &:focus {

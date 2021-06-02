@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-.section-one .section-one__container .section-one__container-item {
+.section-one .section-one__container .section-one__item {
   width: 25%;
   border: 1px solid #000;
   margin: 0 20px;
@@ -23,15 +23,15 @@
   text-align: center;
 }
 
-.section-one .section-one__container .section-one__container-item .paragraph {
+.section-one .section-one__container .section-one__item .section-one__paragraph {
   display: none;
 }
 
-.section-one .section-one__container .section-one__container-button {
+.section-one .section-one__container .section-one__button {
   border-radius: 25px;
 }
 
-.section-one .section-one__container .section-one__container-button:focus {
+.section-one .section-one__container .section-one__button:focus {
   outline: none;
 }
 /*# sourceMappingURL=section-one.css.map */
